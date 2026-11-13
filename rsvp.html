@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rückmeldung | Daniela & Ismael</title>
+<link rel="stylesheet" href="rsvp.css">
+</head>
+<body>
+<header class="top">
+  <a class="back" href="index.html" aria-label="Zurück zur Einladung">← Zurück</a>
+  <a class="logo-link" href="index.html"><img class="topmark" src="assets/logo-header.png" alt="D und I Logo"></a>
+  <span class="top-spacer" aria-hidden="true"></span>
+</header>
+
+<main class="rsvp-page">
+  <section class="intro-block">
+    <div class="kicker">Unsere Hochzeit · 15. Mai 2027</div>
+    <h1 class="sect-title">Seid ihr dabei?</h1>
+    <div class="goldline"></div>
+    <p class="lead">Wir können es kaum erwarten, diesen besonderen Tag mit euch zu verbringen. Bitte tragt hier alle Personen ein, die mit uns feiern.</p>
+  </section>
+
+  <form id="rsvp-form" class="rsvp-form" novalidate>
+    <fieldset class="group" id="group-adults">
+      <legend>Erwachsene</legend>
+      <div class="rows" id="rows-adults"></div>
+      <button type="button" class="add-btn" id="add-adults" aria-label="Weiteren Erwachsenen hinzufügen"><span aria-hidden="true">+</span> Erwachsenen hinzufügen</button>
+    </fieldset>
+
+    <fieldset class="group" id="group-children">
+      <legend>Kinder</legend>
+      <p class="hint">Optional</p>
+      <div class="rows" id="rows-children"></div>
+      <button type="button" class="add-btn" id="add-children" aria-label="Weiteres Kind hinzufügen"><span aria-hidden="true">+</span> Kind hinzufügen</button>
+    </fieldset>
+
+    <div class="hp" aria-hidden="true">
+      <label for="website">Bitte leer lassen</label>
+      <input type="text" id="website" name="_gotcha" tabindex="-1" autocomplete="off">
+    </div>
+
+    <div id="form-error" class="form-error" role="alert" hidden></div>
+
+    <div class="submit-wrap">
+      <button type="submit" class="rsvpbtn" id="submit-btn"><span class="spinner" aria-hidden="true"></span><span id="submit-label">Rückmeldung senden</span></button>
+    </div>
+  </form>
+
+  <section id="success" class="success" tabindex="-1" hidden>
+    <div class="kicker">Vielen Dank</div>
+    <h2 class="sect-title">Wir freuen uns auf euch!</h2>
+    <div class="goldline"></div>
+    <p class="lead">Vielen Dank! Eure Rückmeldung wurde erfolgreich gesendet.</p>
+    <a class="rsvpbtn" href="index.html">Zurück zur Einladung</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <img src="assets/logo-footer.png" alt="D und I">
+  <p>DANIELA &amp; ISMAEL · 15. MAI 2027</p>
+</footer>
+
+<script src="config.js"></script>
+<script src="rsvp.js"></script>
+</body>
+</html>
